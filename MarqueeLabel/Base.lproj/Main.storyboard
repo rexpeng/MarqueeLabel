@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MarqueeLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2V-c1-ZYa" customClass="MarqueeLabel" customModule="MarqueeLabel" customModuleProvider="target">
+                                <rect key="frame" x="28" y="161" width="311" height="39"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="EHs-yk-XOd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text">
+                                        <string key="value">Can anybody tell me how to make a repeating (weekly,daily,monthly) event for iOS Calendar events. My current implementation is something like</string>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="fontFamilyIndex">
+                                        <point key="value" x="4" y="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollSpeed">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.9473726455479452" green="0.2266962756849315" blue="0.10287350171232877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6Z-yM-bJ0" customClass="MarqueeLabel" customModule="MarqueeLabel" customModuleProvider="target">
+                                <rect key="frame" x="20" y="222" width="366" height="33"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="aDq-IW-NxA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="fontFamilyIndex">
+                                        <point key="value" x="14" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollSpeed">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="中文測試 Marquee"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBJ-cI-FNt">
+                                <rect key="frame" x="0.0" y="92" width="1099" height="21"/>
+                                <string key="text">Can anybody tell me how to make a repeating (weekly,daily,monthly) event for iOS Calendar events. My current implementation is something like</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XBJ-cI-FNt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BgU-AQ-oSR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2V-c1-ZYa" secondAttribute="trailing" constant="75" id="Ntb-So-0HL"/>
+                            <constraint firstItem="XBJ-cI-FNt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="Tii-UK-GfF"/>
+                            <constraint firstItem="F2V-c1-ZYa" firstAttribute="top" secondItem="XBJ-cI-FNt" secondAttribute="bottom" constant="48" id="XGc-VR-1Xo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6Z-yM-bJ0" secondAttribute="trailing" constant="28" id="bgd-bD-urM"/>
+                            <constraint firstItem="F2V-c1-ZYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="d0k-AV-ouv"/>
+                            <constraint firstItem="L6Z-yM-bJ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eRm-Av-keW"/>
+                            <constraint firstItem="L6Z-yM-bJ0" firstAttribute="top" secondItem="F2V-c1-ZYa" secondAttribute="bottom" constant="22" id="s9F-Lp-7pO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mLabel" destination="XBJ-cI-FNt" id="XLw-ir-hYN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
